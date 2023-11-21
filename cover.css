@@ -1,0 +1,25 @@
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-image: url('tour.jpg');background-repeat: no-repeat ;background-fixed;background-size: cover;
+    z-index: -1;
+}
+H4{
+   font-size:xxx-large;
+}
+H5{
+    font-size:large;
+}
+.btnlogin-popup{
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: transparent;
+    cursor:pointer;
+    outline: none;
+    color:white;
+    font-size: medium;
+    transition:.3s;
+
+}

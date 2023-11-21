@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ABC.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title> Travel Agency Website</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <img src="travelaire-high-resolution-logo-black-transparent.png" height='50' WIDTH='50' alt="SOULFLY">
+          
+           <ul>
+            <li><a href="About us.html">About Us</a></li>
+            <li><a href="index.html">Book Now</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="tour packages.html">Tour packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Query.html">Query</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+          
+           </ul>
+           <i class="bi bi-three-dots"></i> 
+         </nav>
+         <div class="content">
+              <div class="cont_bx">
+              </div>
+              <div class="trip_box">
+                <div class="search_box">
+                  <div class="card"><h4>Destination <i class="bi bi-caret-down-fill"></i></h4>
+                    <input type="text" placeholder="Enter Your destination" id="Destination" name="Destination"></div>
+          
+                  <div class="card">
+                    <h4>Arrival<i class="bi bi-caret-down-fill"></i></h4>
+                    <input type="date" id="Arrival" name="Arrival">
+                  </div>
+
+                  <div class="card">
+                    <h4>Return<i class="bi bi-caret-down-fill"></i></h4>
+                    <input type="date" id="Return" name="Return">
+                  </div>
+
+                  <div class="card"><h4>People<i class="bi bi-caret-down-fill"></i></h4>
+                    <input type="number" placeholder="Number of People" id="People" name="People">
+                  </div>
+                  <a href="tour packages.html">
+                  <input type="button" onclick="validateAndMove()" value="Explore Now"></a>
+                  
+
+                </div>
+              </div>
+         </div>
+
+
+    </header>
+    <br><br><br><br>
+
+<!-- javascript -->
+
+    <script>
+      function validateAndMove() {
+          var Destination = document.getElementById('Destination').value;
+          var Arrival = document.getElementById('Arrival').value;
+          var Return = document.getElementById('Return').value;
+          var People = document.getElementById('People').value;
+
+          if (Destination === '' || Arrival === '' || Retuen === '' || People === '') {
+              alert('Please fill out all fields');
+              event.preventDefault();
+          } else {
+            
+              alert('Button clicked! Fields are filled.');
+          }
+      }
+  </script>
+
+    <footer>
+      <table cellspacing="7" cellpadding="50">
+          <td rowspan="2"> 
+              <img src="travelaire-high-resolution-logo-black-transparent.png" height="180px" width="180px">
+          </td>
+          <td> <b> O U R &nbsp; S E R V I C E S </b>
+              <ul>
+                  <li> Home </li>
+                  <li> Booking </li>
+                  <li> Tour Packages </li>
+                  <li> Gallery </li>
+              </ul>
+          </td>
+          <td>
+              <a id="contactus"></a>
+              <b> C O N T A C T  &nbsp; U S  </B><br>
+              <i class="bi bi-telephone-fill"></i> +012 345 67890  <br>
+              <i class="bi bi-envelope-open"></i> info@example.com
+              <br><br> <br> 
+              <b> F O L L O W &nbsp; U S </b> <br>
+              <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fsearch"><i class="bi bi-twitter-x"></i></a>
+          </td>
+      </table>
+      <hr> Copyright © Domain. All Rights Reserved. <br>
+      </footer>
+    <script src="app.js"></script>
+</body>
+</html>
